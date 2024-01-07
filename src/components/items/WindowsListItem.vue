@@ -21,7 +21,7 @@
       <div class="window-name fw-bold pe-3">{{window.name}}</div>
       <div class="room-name text-muted">{{window.roomName}}</div>
 
-      <div class="open-status ms-4" :class="{open: isWindowOpen, closed: !isWindowOpen}">
+      <div class="open-status ms-auto" :class="{open: isWindowOpen, closed: !isWindowOpen}">
         <template v-if="isWindowOpen">
           <span class="icon">&#x2B24;</span> Open
         </template>
@@ -30,7 +30,7 @@
         </template>
       </div>
 
-      <div class="expand-button ms-auto">
+      <div class="expand-button ms-2">
         {{ isExpanded ? '&#9660;' : '&#9658;' }}
       </div>
     </div>

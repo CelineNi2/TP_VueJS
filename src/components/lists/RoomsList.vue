@@ -93,7 +93,7 @@ export default {
         this.isProblem = false;
       },
       async createRoom(){
-        if (this.name!=="" && this.currentTemp!=="" && this.floor!==""){
+        if (this.name!=="" && this.currentTemp!=="" && this.floor){
           try {
             let response = await axios.post(
                 `${API_HOST}/api/rooms`,

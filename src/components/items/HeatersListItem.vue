@@ -21,7 +21,7 @@
       <div class="heater-name fw-bold pe-3">{{heater.name}}</div>
       <div class="room-name text-muted">{{heater.roomName}}</div>
 
-      <div class="open-status ms-4" :class="{on: isHeaterOn, off: !isHeaterOn}">
+      <div class="open-status ms-auto" :class="{on: isHeaterOn, off: !isHeaterOn}">
         <template v-if="isHeaterOn">
           <span class="icon">&#x2B24;</span> On
         </template>
@@ -30,7 +30,7 @@
         </template>
       </div>
 
-      <div class="expand-button ms-auto">
+      <div class="expand-button ms-2">
         {{ isExpanded ? '&#9660;' : '&#9658;' }}
       </div>
     </div>

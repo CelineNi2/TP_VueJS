@@ -32,6 +32,12 @@
     >
     </windows-in-room>
 
+    <heaters-in-room v-for="heater in room.heaters"
+                     :heater="heater"
+                     :key="heater.id"
+    >
+    </heaters-in-room>
+
   </div>
 </template>
 
@@ -39,10 +45,11 @@
 import axios from 'axios';
 import {API_HOST} from '../../config';
 import WindowsInRoom from "./WindowsInRoom.vue";
+import HeatersInRoom from "./HeatersInRoom.vue";
 
 export default {
   name: 'RoomsListItem',
-  components: {WindowsInRoom},
+  components: {HeatersInRoom, WindowsInRoom},
   props: ['room'],
   data: function() {
     return{
@@ -59,7 +66,7 @@ export default {
     },
     toggleModal() {
       this.isModalVisible = !this.isModalVisible;
-    }
+    },
   }
 }
 </script>
