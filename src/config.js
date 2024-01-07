@@ -1,0 +1,1 @@
+export const API_HOST = 'https://automacorp-erwin-martin.cleverapps.io';
