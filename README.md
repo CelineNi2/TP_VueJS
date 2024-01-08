@@ -1,7 +1,7 @@
-# Automacorp frontend - Erwin MARTIN & Céline NI
+# VueJS Practical work - Erwin MARTIN & Céline NI
 
 This Git repository contains the Automacorp frontend developped for a programming course.
-The goal was to implement the frontend of an application managing buildings, rooms, windows, heaters and temperature sensors.
+The goal was to implement the frontend of an application managing rooms and windows.
 All of this can, for example, serve as a simulation to understand how to efficiently use energy during winters.
 
 This frontend is powered by :
